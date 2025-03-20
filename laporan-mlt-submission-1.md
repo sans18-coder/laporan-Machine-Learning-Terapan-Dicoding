@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Iksan Wijaya
 
 ## Domain Proyek - Pendidikan
 
@@ -45,13 +45,13 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini diantaranya:
   - Melakukan _Standard Scaler_.
 
 - Untuk pembuatan model dipilih penggunaan model dengan algoritma Multi-Layer Perceptron dan K-Nearest Neighbor. Algoritma tersebut dipilih karena mudah digunakan dan juga cocok untuk kasus ini. Berikut cara kerja, kelebihan dan kekurangan algoritma Multi-Layer Perceptron dan K-Nearest Neighbor:
-  - Cara kerja Algoritma Multi-Layer Perceptron (MLP) [4]:
+  - Cara kerja Algoritma Multi-Layer Perceptron (MLP) [4](https://ejurnal.stmik-budidarma.ac.id/index.php/mib/article/view/2035):
 
     - Gunakan dataset untuk membangun model MLP.
     - Proses feedforward dilakukan dengan mengalirkan data dari lapisan input ke lapisan tersembunyi hingga mencapai lapisan output.
     - Proses backpropagation digunakan untuk menyesuaikan bobot berdasarkan selisih antara prediksi dan nilai aktual.
     - Iterasi feedforward dan backpropagation dilakukan berkali-kali pada dataset pelatihan hingga model mencapai kinerja yang optimal.
-  - Kelebihan dan kekurangan Algoritma Multi-Layer Perceptron (MLP) [5]:
+  - Kelebihan dan kekurangan Algoritma Multi-Layer Perceptron (MLP) [5](http://publication.petra.ac.id/index.php/teknik-informatika/article/view/10496):
 
     - Kelebihan:
       - MLP mampu menangani hubungan non-linear dalam data, sehingga cocok untuk masalah yang lebih kompleks.
