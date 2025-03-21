@@ -148,17 +148,6 @@ Berikut adalah tahapan-tahapan dalam melakukan pra-pemrosesan data:
 
 Setelah dilakukan pra-pemrosesan pada dataset, langkah selanjutnya adalah modeling terhadap data. Pada tahap ini menggunakan 2 algoritma yaitu K-Nearest Neighbor (KNN) dan Neural Network (NN) dengan tanpa parameter tambahan. Pertama-tama kedua model ini dilatih menggunakan data latih. Setelah itu kedua model akan diuji dengan data uji. Terakhir kedua model akan diukur nilai akurasinya. Perbandingan hasil dari kedua model akan dianalisis untuk menentukan algoritma terbaik.
 
-Perbandingan Hasil dari kedua model sebagai berikut:<br />
-![image](https://github.com/user-attachments/assets/44134961-d8b1-440a-8e5a-720ff53481a2)
-
-
-- _Confussion Matrix_ algoritma K-Nearest Neighbor:<br />
-  ![image](https://github.com/user-attachments/assets/007b5792-56cb-4af8-bfae-f9770c87b019)
-
-- _Confussion Matrix_ algoritma Multi-Layer Perceptron:<br />
-  ![image](https://github.com/user-attachments/assets/e2d1c0f2-6523-4661-9d5a-ff930df71cf6)
-
-
 ### Cara Kerja Algoritma KNN:
 
 KNN adalah algoritma klasifikasi yang bekerja berdasarkan prinsip "majority vote" atau suara terbanyak dari tetangga terdekat. Ketika ada data baru yang perlu diklasifikasikan, algoritma ini akan:
@@ -203,6 +192,18 @@ Proses pembelajaran MLP melibatkan penyesuaian bobot koneksi antar neuron untuk 
   * Presisi: Mengukur proporsi prediksi positif yang benar dari keseluruhan prediksi positif.
   * Recall: Mengukur proporsi prediksi positif yang benar dari keseluruhan sampel yang sebenarnya positif.
   * F1-score: Merupakan rata-rata harmonik antara presisi dan recall, memberikan keseimbangan antara keduanya.
+
+  Perbandingan Hasil dari kedua model sebagai berikut:<br />
+  ![image](https://github.com/user-attachments/assets/44134961-d8b1-440a-8e5a-720ff53481a2)
+  
+  
+  - _Confussion Matrix_ algoritma K-Nearest Neighbor:<br />
+    ![image](https://github.com/user-attachments/assets/007b5792-56cb-4af8-bfae-f9770c87b019)
+  
+  - _Confussion Matrix_ algoritma Multi-Layer Perceptron:<br />
+    ![image](https://github.com/user-attachments/assets/e2d1c0f2-6523-4661-9d5a-ff930df71cf6)
+
+
 
 * Evaluasi Metrik <br />
 Berdasarkan laporan klasifikasi, model Multi-Layer Perceptron (MLP) menunjukkan kinerja yang sedikit lebih baik dibandingkan K-Nearest Neighbors (KNN) dalam hal akurasi keseluruhan:
