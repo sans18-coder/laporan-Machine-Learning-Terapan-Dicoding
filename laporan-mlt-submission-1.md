@@ -96,6 +96,8 @@ DataFrame ini memiliki 20.000 baris data dan 16 kolom. Terdapat beberapa tipe da
 * int64: Unnamed, USER_ID
 * object: NAME, PROFILE
 
+> DataFrame ini masih memiliki nilai null (missing values) yang perlu ditangani sebelum dilakukan analisis atau pemodelan lebih lanjut.
+
 ---
 
 Pada berkas yang diuduh yakni dataset-tortuga.csv berisi 20000 baris dan 16 kolom. untuk penjelasan mengenai variabel-variabel pada dataset ini dapat dilihat sebagai berikut:
@@ -117,10 +119,6 @@ Pada berkas yang diuduh yakni dataset-tortuga.csv berisi 20000 baris dan 16 kolo
 - AVG_SCORE_FRONTEND: Skor rata-rata yang diperoleh dalam kursus terkait pengembangan frontend.
 - PROFILE: Profil pengguna, yang bisa berupa deskripsi singkat, tingkat keahlian, atau kategori berdasarkan pola pembelajaran mereka.
 
-## Data Preparation
-Berikut adalah tahapan-tahapan dalam melakukan pra-pemrosesan data:
-
-
 - Men-drop kolom `Unnamed: 0`, `NAME`, `USER_ID`
   ![image](https://github.com/user-attachments/assets/cbce6ac4-f189-4839-9241-850a049c9093)
 - Menampilkan kolom unik <br />
@@ -129,6 +127,11 @@ Berikut adalah tahapan-tahapan dalam melakukan pra-pemrosesan data:
   ![image](https://github.com/user-attachments/assets/f4c09fc8-144a-44f0-a624-e95d63d1b07a)
 - Men-check missing value pada setiap kolom <br />
   ![image](https://github.com/user-attachments/assets/d077b228-216f-400d-911e-4c313e865be8)
+
+
+## Data Preparation
+Berikut adalah tahapan-tahapan dalam melakukan pra-pemrosesan data:
+
 - Menangani Nilai yang Hilang: Data yang memiliki nilai hilang diatasi dengan menggantinya menggunakan median dari setiap kolom. Langkah ini dilakukan agar tidak ada data yang hilang yang dapat mengganggu proses pelatihan model.
   ![image](https://github.com/user-attachments/assets/e1913182-7c7e-4538-9a28-706bd41e1384)
 - Membagi Dataset: Dataset dibagi menjadi dua bagian:
@@ -190,16 +193,6 @@ Proses pembelajaran MLP melibatkan penyesuaian bobot koneksi antar neuron untuk 
   * `hidden_layer_sizes=(128, 64, 32)`: Menentukan arsitektur jaringan dengan 3 lapisan tersembunyi yang memiliki masing masing 128, 64, dan 32 neuron.
   * `solver='adam'`: Menggunakan algoritma optimasi Adam untuk melatih model.
   * `max_iter=500`: Menetapkan jumlah maksimum iterasi (epoch) selama pelatihan.
-
-* Interpretasi Laporan Klasifikasi:
-  * Akurasi keseluruhan 0.9535: Model MLP ini juga menunjukkan performa yang sangat baik, mampu memprediksi kelas dengan benar untuk sekitar 95.35% data uji.
-  * Precision, recall, dan F1-score tinggi untuk sebagian besar kelas: Menunjukkan kemampuan model yang baik dalam mengidentifikasi kelas-kelas tersebut.
-  * Perbedaan performa antar kelas: Beberapa kelas mungkin sedikit lebih sulit diprediksi daripada yang lain, tetapi secara umum model ini sangat efektif.
-
-* Perbandingan dengan KNN:
-  * MLP cenderung lebih kompleks daripada KNN: MLP memiliki lebih banyak parameter yang perlu diatur dan proses pelatihan yang lebih rumit.
-  * MLP dapat mempelajari hubungan non-linear yang kompleks dalam data: Ini bisa menjadi keuntungan jika data memiliki pola yang tidak dapat dideteksi oleh KNN yang lebih sederhana.
-  * KNN lebih mudah diinterpretasikan: Keputusan KNN didasarkan pada kemiripan dengan tetangga terdekat, sedangkan keputusan MLP lebih sulit dipahami karena melibatkan banyak lapisan dan bobot.
 
 ## Evaluation
 
